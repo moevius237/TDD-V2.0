@@ -21,4 +21,11 @@ public class TestCoche{
         nuevoCoche.decelerar(20);
         Assertions.assertEquals(30,nuevoCoche.velocidad);
     }
+    @Test
+    public void test_al_decelerar_un_coche_su_velocidad_no_puede_ser_menor_que_cero_Pablo(){
+        Coche nuevoCoche = new Coche();
+        nuevoCoche.velocidad=50;
+        nuevoCoche.decelerar(80);
+        Assertions.assertEquals(0,nuevoCoche.velocidad);
+    }
 }
