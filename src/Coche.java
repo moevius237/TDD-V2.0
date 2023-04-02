@@ -8,4 +8,9 @@ public class Coche {
 		
 	}
 
+	public void decelerar(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
